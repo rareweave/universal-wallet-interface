@@ -1,0 +1,25 @@
+{
+  "name": "universal-wallet-interface",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx esbuild ./chains/solana/solflare.js ./chains/solana/phantom.js --bundle --outdir=out --target=esnext --format=esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rareweave/universal-wallet-interface.git"
+  },
+  "devDependencies": {
+    "esbuild": "0.19.3"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.78.5",
+    "buffer": "^6.0.3"
+  },
+  "author": "Ducksquaddd <crimson@rareweave.store>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rareweave/universal-wallet-interface/issues"
+  },
+  "homepage": "https://github.com/rareweave/universal-wallet-interface#readme"
+}
