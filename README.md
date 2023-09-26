@@ -30,21 +30,29 @@
 - **Parameters:**
   - `signedTransaction` (Object): The signed transaction to be sent on chain
   - `options` (Object, optional): Additional options for sending the transaction.
-- **Returns:** A promise that resolves with the result of the transaction.
+- **Returns:** A promise that resolves with the hash of the transaction.
 
 ### `signAndSend(transaction, options?): Promise<Result>`
 
 - **Description:** Sign a transaction and sends it on chain
 - **Parameters:**
   - `transaction` (Object): The transaction to be signed & sent
-  - `options` (Object, optional): Additional options for the signing process.
-- **Returns:** A promise that resolves with the result of the transaction.
+  - `options` (Object, optional): Additional options for the signing or sending process.
+- **Returns:** A promise that resolves with the hash of the transaction.
 
 ### `sendCoins(from, to, amount, options): Promise<Result>`
 
+- **Description:** Send coins to someone
+- **Parameters:**
+  - `from` (string): Your address
+  - `to` (string): The recipents address
+  - `amount` (string | number): The amount you want to send (Denominated)
+  - `options` (Object, optional): Additional options for the sendning process.
+- **Returns:** A promise that resolves with the signed transaction hash
+
 ### `waitForFinality(transactionHash): Promise<Result>`
 
-- **Description:** Waits for transaction to be comfirmed and on chain
+- **Description:** Waits for transaction to be confirmed and on chain
 - **Parameters:**
   - `transactionHash` (String): The hash of the transaction to wait for.
 - **Returns:** A promise that resolves when the transaction is confirmed, or rejects on timeout or failure.
