@@ -23500,7 +23500,7 @@ var PhantomWallet = class {
   }
 };
 export {
-  PhantomWallet
+  PhantomWallet as default
 };
 /*! Bundled license information:
 
