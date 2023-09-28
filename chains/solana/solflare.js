@@ -7,7 +7,7 @@ import {
 
 var BufferFill = require("buffer/").Buffer;
 
-export class SolflareWallet {
+export default class SolflareWallet {
   constructor(rpc) {
     if (typeof Buffer == "undefined") {
       window.Buffer = BufferFill;

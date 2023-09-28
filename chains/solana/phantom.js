@@ -7,7 +7,7 @@ import {
 
 var BufferFill = require("buffer/").Buffer;
 
-export class PhantomWallet {
+export default class PhantomWallet {
   constructor(rpc) {
     if (typeof Buffer == "undefined") {
       window.Buffer = BufferFill;

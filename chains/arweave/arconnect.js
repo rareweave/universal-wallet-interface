@@ -2,7 +2,7 @@ import Arweave from "arweave";
 
 var BufferFill = require("buffer/").Buffer;
 
-export class ArConnectWallet {
+export default class ArConnectWallet {
   constructor(rpc) {
     if (typeof Buffer == "undefined") {
       window.Buffer = BufferFill;
