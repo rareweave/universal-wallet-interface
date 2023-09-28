@@ -3,7 +3,7 @@
   "description": "",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx esbuild ./chains/solana/solflare.js ./chains/solana/phantom.js ./chains/arweave/arconnect.js --bundle --outdir=out --target=esnext --format=esm"
+    "build": "esbuild ./chains/** --bundle --outdir=out --target=esnext --format=esm"
   },
   "repository": {
     "type": "git",

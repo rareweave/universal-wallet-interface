@@ -23500,7 +23500,7 @@ var SolflareWallet = class {
   }
 };
 export {
-  SolflareWallet
+  SolflareWallet as default
 };
 /*! Bundled license information:
 

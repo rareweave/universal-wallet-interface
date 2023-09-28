@@ -5527,7 +5527,7 @@ var ArConnectWallet = class {
   }
 };
 export {
-  ArConnectWallet
+  ArConnectWallet as default
 };
 /*! Bundled license information:
 
