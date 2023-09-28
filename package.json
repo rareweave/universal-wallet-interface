@@ -3,7 +3,7 @@
   "description": "",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx esbuild ./chains/solana/solflare.js ./chains/solana/phantom.js --bundle --outdir=out --target=esnext --format=esm"
+    "build": "npx esbuild ./chains/solana/solflare.js ./chains/solana/phantom.js ./chains/arweave/arconnect.js --bundle --outdir=out --target=esnext --format=esm"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@solana/web3.js": "^1.78.5",
+    "arweave": "^1.14.4",
     "buffer": "^6.0.3"
   },
   "author": "Ducksquaddd <crimson@rareweave.store>",

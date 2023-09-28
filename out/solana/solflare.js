@@ -23495,7 +23495,7 @@ var SolflareWallet = class {
   async getActiveAddress() {
     return this.provider.publicKey.toString();
   }
-  async isConnected() {
+  isConnected() {
     return this.provider.isConnected;
   }
 };
