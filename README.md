@@ -9,11 +9,12 @@
   - `rpc` (String): RPC node so wallet can send on chain
   - `options` (Object): Configuration options for the wallet connection.
 
-### `signature(data): Promise<Data>`
+### `signature(data, options?): Promise<Data>`
 
 - **Description:** Stamp a peice of data with proof its yours
 - **Parameters:**
   - `data` (String): The data to be signed.
+  - `options` (Object, optional): Options for signature
 - **Returns:** A promise that resolves with the cryptographic signature.
 
 ### `sign(transaction, options?): Promise<Transaction>`
