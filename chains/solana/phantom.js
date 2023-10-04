@@ -4,7 +4,7 @@ import {
   Connection,
   PublicKey,
 } from "@solana/web3.js";
-
+import bs58 from 'bs58';
 var BufferFill = require("buffer/").Buffer;
 
 export default class PhantomWallet {
@@ -39,8 +39,7 @@ export default class PhantomWallet {
       encodedMessage,
       "utf8"
     );
-
-    return signedMessage;
+    return bs58.encode(signedMessage.signature);
   }
 
   async sign(transaction) {
