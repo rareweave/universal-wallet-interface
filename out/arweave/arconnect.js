@@ -5411,7 +5411,7 @@ var ArConnectWallet = class {
   async signature(data) {
     const encodedMessage = new TextEncoder().encode(data);
     const signature = await this.provider.signMessage(encodedMessage);
-    return signature;
+    return this.arweave.utils.bufferTob64Url(signature);
   }
   async sign(transaction) {
     try {

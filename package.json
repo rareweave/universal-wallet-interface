@@ -17,7 +17,9 @@
     "arweave": "^1.14.4",
     "arweave-wallet-connector": "^1.0.2",
     "bs58": "^5.0.0",
-    "buffer": "^6.0.3"
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "everpay": "^0.7.0"
   },
   "author": "Ducksquaddd <crimson@rareweave.store>",
   "license": "ISC",
