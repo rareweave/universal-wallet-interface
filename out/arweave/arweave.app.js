@@ -9737,7 +9737,9 @@ var ArweaveApp = class {
   // Needs to be done
   async signature(data) {
     const encodedMessage = new TextEncoder().encode(data);
-    const signature = await this.webwallet.signMessage(encodedMessage);
+    const signature = await this.webwallet.signMessage(encodedMessage, {
+      hashAlgorithm: "SHA-256"
+    });
     return this.arweave.utils.bufferTob64Url(signature);
   }
   async sign(transaction) {

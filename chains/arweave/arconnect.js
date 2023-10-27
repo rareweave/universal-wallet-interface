@@ -52,7 +52,9 @@ export default class ArConnectWallet {
 
   async signature(data) {
     const encodedMessage = new TextEncoder().encode(data);
-    const signature = await this.provider.signMessage(encodedMessage);
+    const signature = await this.provider.signMessage(encodedMessage, {
+      hashAlgorithm: "SHA-256",
+    });
 
     return this.arweave.utils.bufferTob64Url(signature);
   }

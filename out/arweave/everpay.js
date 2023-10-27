@@ -40991,7 +40991,7 @@ var esm_default = Everpay;
 var import_arweave3 = __toESM(require_web2());
 var BufferFill = require_buffer2().Buffer;
 var EverpayArweave = class {
-  constructor(options2 = {}) {
+  constructor() {
     if (typeof Buffer == "undefined") {
       window.Buffer = BufferFill;
     }
@@ -41024,10 +41024,10 @@ var EverpayArweave = class {
     return "everpay cant sign data";
   }
   async send() {
-    return "everpay doesnt send transactions this way";
+    return Error("Use sendCoins()");
   }
   async signAndSend() {
-    return "everpay cant sign or send";
+    return Error("Use sendCoins()");
   }
   async sendCoins(from, to, amount, denom, options2 = {
     memo: "",
