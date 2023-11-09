@@ -2,11 +2,16 @@
 
 ## Interface Methods
 
-### `connect(rpc?, options)`
+### `constructor(rpc?, options?)`
+
+- **Description:** Initalizes wallet client
+- `rpc` (String): RPC node so wallet can send on chain
+- `options` (Object): Configuration options for the wallet connection.
+
+### `connect(options?)`
 
 - **Description:** Connects the wallet to the website
 - **Parameters:**
-  - `rpc` (String): RPC node so wallet can send on chain
   - `options` (Object): Configuration options for the wallet connection.
 
 ### `signature(data, options?): Promise<Data>`
