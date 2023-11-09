@@ -116,12 +116,7 @@ export default class EverpayArweave {
   }
 
   async isConnected() {
-    const permissions = await this.provider.getPermissions();
-
-    if (permissions.length <= 0) {
-      return false;
-    } else {
-      return true;
-    }
+    if (this.everpay) return true;
+    else return false;
   }
 }
