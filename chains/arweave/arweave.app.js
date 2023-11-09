@@ -21,14 +21,9 @@ export default class ArweaveApp {
   }
 
   async connect(
-    options = ({
+    options = {
       name: "Local",
-    },
-    {
-      state: {
-        url: "arweave.app",
-      },
-    })
+    }
   ) {
     this.webwallet = new ArweaveWebWallet(options);
 
