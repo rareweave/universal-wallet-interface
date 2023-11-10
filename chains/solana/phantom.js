@@ -4,7 +4,7 @@ import {
   Connection,
   PublicKey,
 } from "@solana/web3.js";
-import bs58 from 'bs58';
+import bs58 from "bs58";
 var BufferFill = require("buffer/").Buffer;
 
 export default class PhantomWallet {
@@ -121,7 +121,7 @@ export default class PhantomWallet {
     }
   }
 
-  async getActiveAddress() {
+  getActiveAddress() {
     return this.provider.publicKey.toString();
   }
 
